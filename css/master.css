@@ -1,3 +1,7 @@
+:root {
+  --main-color: #FF9880;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
 }
@@ -49,5 +53,43 @@ body {
   text-align: right;
   margin-left: 10px;
 }
+
+.header .links li a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.header .links li a:hover,
+.header .links li a.active {
+  color: var(--main-color);
+  transition: .3s all ease-in-out;
+}
+
+
+.intro-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #FFF;
+  z-index: 2;
+}
+
+.intro-text h1 {
+  font-size: 60px;
+}
+
+.intro-text h1 span {
+  color: var(--main-color);
+}
+
+.intro-text p {
+  line-height: 1.6;
+  font-size: 20px;
+
+
+}
+
 
 /* End Landing Page */
